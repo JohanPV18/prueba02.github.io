@@ -1,0 +1,78 @@
+{
+    "villainSquadName": "Super Villain Squad",
+    "from": "Los Angeles",
+    "created": 2022,
+    "secretBase": "Moon Station",
+    "active": true,
+    "villianSquadMembers": [
+        {
+            "villainName": "Shadow",
+            "villainAge": 20,
+            "villainIdentity": "Willian Makensy",
+            "villainPowers": [
+                "Plant Control",
+                "Self-Duplication",
+                "Death Touch"
+             
+            ]
+        },
+        {
+            "villainName": "Leviathan",
+            "villainAge": 50,
+            "villainIdentity": "Luna Diaz",
+            "villainPowers": [
+                "Flight",
+                "Invulnerability",
+                "Super Hearing",
+                "Luck"
+            ]
+        },
+        {
+            "villainName": "Drift",
+            "villainAge": 23,
+            "villainIdentity": "Unknown",
+            "villainPowers": [
+                "Water Control",
+                "Phasing",
+                "Elasticity",
+                "Teleportation"         
+            ]
+        },
+        {
+            "villainName": "Perilous",
+            "villainAge": 77,
+            "villainIdentity": "Karen Burlon",
+            "villainPowers": [
+                "Psychic Surgery",
+                "Hard Skin",
+                "Endurance",
+                "Extreme Stamina"
+            ]
+        },
+        {
+            "villainName": "Twisted",
+            "villainAge": 250,
+            "villainIdentity": "Unknown",
+            "villainPowers": [
+                "Energy",
+                "Immortality",
+                "Night Vision",
+                "Powered Suits"           
+            ]
+        },
+        {
+            "villainName": "Cascade",
+            "villainAge": 8,
+            "villainIdentity": "John Smith",
+            "villainPowers": [
+                "Spitting Acid",
+                "Gravity Control",
+                "Cold Resistance",
+                "Radar",
+                "Animal Imitation",
+                "Steel Claws"
+            ]
+        }
+        
+    ]
+}

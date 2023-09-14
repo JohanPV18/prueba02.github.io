@@ -1,0 +1,84 @@
+/* || general styles */
+
+html {
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+body {
+    max-width: 55%;
+    margin: 0 auto;
+    background-image: url(villain2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 165, 165);
+}
+
+h1, h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+/* header styles */
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    background-color: rgb(39, 0, 0);
+    border-radius: 1em;
+    padding: 0.2em;
+    transition: box-shadow 0.3s ease;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgb(39, 0, 0);
+    border-radius: 1em;
+    padding: 0.5em;
+    color: rgb(255, 71, 71);
+    transition: box-shadow 0.3s ease;
+}
+
+/* section styles */
+
+section article {
+    width: 28.1%;
+    float: left;
+    background-color: rgb(39, 0, 0);
+    margin: 0.5em;
+    padding: 0 1em 1em 1.1em;
+    border-radius: 1em;
+    transition: box-shadow 0.3s ease;
+}
+
+section p {
+    margin: 5px 0;
+}
+
+section ul {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -3px;
+    margin-bottom: 10px;
+}
+
+section article:hover{
+    box-shadow: 0 0.3em 0.6em black;
+}
+h1:hover{
+    box-shadow: 0 0.1em 0.3em black;
+}
+header p:hover{
+    box-shadow: 0 0.2em 0.4em black;
+}
+
+@media screen and (max-width:1320px){
+
+    section article{
+        min-width: 80%;
+    }
+}
