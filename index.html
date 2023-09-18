@@ -23,15 +23,15 @@
 
     async function populate() {
 
-        const requestURL = 'superheroes.json';
+        const requestURL = 'superVillains.json';
         const request = new Request(requestURL);
 
         const response = await fetch(request);
-        const superHeroesText = await response.text();
+        const superVillainsText = await response.text();
 
-        const superHeroes = JSON.parse(superHeroesText);
-        populateHeader(superHeroes);
-        populateHeroes(superHeroes);
+        const superVillains = JSON.parse(superVillainsText);
+        populateHeader(superVillains);
+        populateVillains(superVillains);
 
     }
 
@@ -41,42 +41,42 @@
         myH1.textContent = obj.villainSquadName;
         header.appendChild(myH1);
 
-        const myPara = document.createElement('p');
-        myPara.textContent = `From: ${obj.from} // Created: ${obj.created}`;
-        header.appendChild(myPara);
+        const myP = document.createElement('p');
+        myP.textContent = `From: ${obj.from} // Created: ${obj.created}`;
+        header.appendChild(myP);
     }
 
-    function populateHeroes(obj) {
+    function populateVillains(obj) {
         const section = document.querySelector('section');
-        const heroes = obj.villianSquadMembers;
+        const villains = obj.villianSquadMembers;
 
-        for (const hero of heroes) {
-            const myArticle = document.createElement('article');
+        for (const villain of villains) {
+            const villainArticle = document.createElement('article');
             const myH2 = document.createElement('h2');
-            const myPara1 = document.createElement('p');
-            const myPara2 = document.createElement('p');
-            const myPara3 = document.createElement('p');
-            const myList = document.createElement('ul');
+            const myP1 = document.createElement('p');
+            const myP2 = document.createElement('p');
+            const myP3 = document.createElement('p');
+            const myLi = document.createElement('ul');
 
-            myH2.textContent = hero.villainName;
-            myPara1.textContent = `Secret identity: ${hero.villainIdentity}`;
-            myPara2.textContent = `Age: ${hero.villainAge}`;
-            myPara3.textContent = 'Superpowers:';
+            myH2.textContent = villain.villainName;
+            myP1.textContent = `Secret identity: ${villain.villainIdentity}`;
+            myP2.textContent = `Age: ${villain.villainAge}`;
+            myP3.textContent = 'Superpowers:';
 
-            const superPowers = hero.villainPowers;
+            const superPowers = villain.villainPowers;
             for (const power of superPowers) {
                 const listItem = document.createElement('li');
                 listItem.textContent = power;
-                myList.appendChild(listItem);
+                myLi.appendChild(listItem);
             }
 
-            myArticle.appendChild(myH2);
-            myArticle.appendChild(myPara1);
-            myArticle.appendChild(myPara2);
-            myArticle.appendChild(myPara3);
-            myArticle.appendChild(myList);
+            villainArticle.appendChild(myH2);
+            villainArticle.appendChild(myP1);
+            villainArticle.appendChild(myP2);
+            villainArticle.appendChild(myP3);
+            villainArticle.appendChild(myLi);
 
-            section.appendChild(myArticle);
+            section.appendChild(villainArticle);
         }
     }
 
